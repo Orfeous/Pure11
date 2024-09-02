@@ -1,5 +1,5 @@
 # Pure 11 🪟
-![Pure11 meme](./.github/pure.png)
+<a href="https://www.youtube.com/watch?v=aGSKrC7dGcY" target="_blank">![Pure11 meme](./.github/pure.png)</a>
 
 Windows 11 arrives loaded with more than just an operating system—there's also bloatware, relentless telemetry, and a host of so-called 'features' designed to serve everyone except the end user.
 
@@ -29,7 +29,7 @@ Pure11 is for those who prefer an OS that works for them, not the other way arou
 
 - **AppX Packages**
 
-    For the latest list please check the contents of [./config/appx.conf](#)
+    For the latest list please check the contents of [./config/appx.conf](./config/appx.conf)
 
     <details>
 
@@ -120,7 +120,7 @@ Pure11 is for those who prefer an OS that works for them, not the other way arou
 
 - **Windows Capabilities**
 
-    For the latest list please check the contents of [./config/capabilities.conf](#)
+    For the latest list please check the contents of [./config/capabilities.conf](./config/capabilities.conf)
 
     <details>
 
@@ -144,7 +144,7 @@ Pure11 is for those who prefer an OS that works for them, not the other way arou
 
 - **Optional Windows Features**
 
-    For the latest list please check the contents of [./config/capabilities.conf](#)
+    For the latest list please check the contents of [./config/features.conf](./config/features.conf)
 
     <details>
 
@@ -347,7 +347,7 @@ The script can be configured using the various files in the `./config` folder (a
 - 📂 **work/drivers**
 
     Place device drivers in this directory and they will be added to the image. Recursive, subfolders allowed.
-    
+
 
 
 </details>
@@ -388,6 +388,20 @@ The script can be configured using the various files in the `./config` folder (a
 </details>
 
 ## Remarks / Resources
+
+A ton of useful info, snippets and whatnot is coming from the below listed resources, huge thanks for their hard work!
+
+- https://privacy.sexy 
+- https://github.com/undergroundwires/privacy.sexy
+- https://schneegans.de
+- https://www.youtube.com/@pcsecuritychannel
+- https://github.com/StellarSand/privacy-settings
+- https://github.com/memstechtips/UnattendedWinstall
+- https://github.com/teeotsa/windows-11-debloat
+- https://github.com/Atlas-OS/Atlas
+- https://github.com/swczk/BetterWithReg
+- https://github.com/beerisgood/Windows11_Hardening
+- https://github.com/ntdevlabs/tiny11builder
 
 ## Disclaimer
 
