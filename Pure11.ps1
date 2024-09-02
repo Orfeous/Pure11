@@ -16,7 +16,7 @@
         Builds the Pure 11 install iso.
 
     .PARAMETER Init
-        When used in conjuction with [-Buildiso] it will create the required folder structure and exit.
+        It creates the required folder structure and exit.
 
     .LINK
         https://github.com/Orfeous/Pure11

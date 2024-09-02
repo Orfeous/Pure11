@@ -218,6 +218,14 @@ Windows Registry Editor Version 5.00
 
 ; Mark 'Microsoft.Windows.DevHome' as deprovisioned to block reinstall during Windows updates.
 [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.DevHome_8wekyb3d8bbwe]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate]
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator\UScheduler\DevHomeUpdate]
+"workCompleted"=dword:00000001
 
 ; Mark 'MicrosoftWindows.CrossDevice' as deprovisioned to block reinstall during Windows updates.
 [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\MicrosoftWindows.CrossDevice_cw5n1h2txyewy]
+
+; Prevent outlook installation
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator\UScheduler\OutlookUpdate]
+"workCompleted"=dword:00000001
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate]
