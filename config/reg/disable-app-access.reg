@@ -1,0 +1,54 @@
+Windows Registry Editor Version 5.00
+
+; Disable ad customization with Advertising ID
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+; Disable Microsoft feature trials
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\PreviewBuilds]
+"EnableExperimentation"=dword:00000000
+"EnableConfigFlighting"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\PolicyManager\default\System]
+"AllowExperimentation"=dword:00000000
+
+; Disable receipt of Windows preview builds
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\PreviewBuilds]
+"AllowBuildPreview"=dword:00000000
+
+; Remove Windows Insider Program from Settings
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\WindowsSelfHost\UI\Visibility]
+"HideInsiderPage"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\wisvc]
+"Start"=dword:00000004
+
+; Disable Language setting synchronization
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language]
+"Enabled"=dword:00000001
+
+; Disable Recall
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"DisableAIDataAnalysis"=dword:00000001
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+
+; Opt out of Windows privacy consent
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+; Disable lock screen camera access
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreenCamera"=dword:00000001
+
+; Disable outdated Snipping Tool.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\TabletPC]
+"DisableSnippingTool"=dword:00000001
+
+; Disable Print Screen keyboard shortcut for Snipping Tool.
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Control Panel\Keyboard]
+"PrintScreenKeyForSnippingEnabled"=dword:00000000

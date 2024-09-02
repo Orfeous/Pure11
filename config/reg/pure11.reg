@@ -1,0 +1,797 @@
+Windows Registry Editor Version 5.00
+
+; Disable Cortana in start menu
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"CortanaEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"CortanaEnabled"=dword:00000000
+
+; Disable Bing search in start menu
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
+
+; Hide the Search bar from the Taskbar
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+; Hide recommended section in start menu <-- neat sh#t right there! (:
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedSection"=dword:00000001
+
+; Disable personal cloud content search in taskbar
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsMSACloudSearchEnabled"=dword:00000000
+"IsAADCloudSearchEnabled"=dword:00000000
+
+; Disable Cortana in ambient mode
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"CortanaInAmbientMode"=dword:00000000
+
+; Disable indexing of encrypted items
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowIndexingEncryptedStoresOrItems"=dword:00000000
+
+; Disable automatic language detection when indexing
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AlwaysUseAutoLangDetection"=dword:00000000
+
+; Disable iFilters and protocol handlers
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventUnwantedAddIns"=""
+
+; Disable Bing search and recent search suggestions
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Disable web search in search bar
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+
+; Disable web results in Windows Search
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWeb"=dword:00000000
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+
+; Disable Windows search highlights
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableDynamicContentInWSB"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDynamicSearchBoxEnabled"=dword:00000000
+
+; Remove Crap from taskbar.
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarDa"=dword:00000000
+"TaskbarMn"=dword:00000000
+"ShowCopilotButton"=dword:00000000
+"ShowSyncProviderNotifications"=dword:00000000
+"ShowCortanaButton"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+; Remove 'Meet Now' icon from taskbar
+"HideSCAMeetNow"=dword:00000001
+; Disable AutoPlay and AutoRun
+"NoDriveTypeAutoRun"=dword:000000ff ; (255)
+"NoAutorun"=dword:00000001
+; Disable 'Internet File Association' service
+"NoInternetOpenWith"=dword:00000001
+; Disable 'Order Prints' picture task
+"NoOnlinePrintsWizard"=dword:00000001
+; Disable 'Publish to Web' option for files and folders
+"NoPublishingWizard"=dword:00000001
+; Disable provider list downloads for wizards
+"NoWebServices"=dword:00000001
+; Disable history of recently opened documents
+"NoRecentDocsHistory"=dword:00000001
+; Enable camera on/off OSD notifications
+"NoPhysicalCameraLED"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+; Disable AutoPlay and AutoRun
+"NoAutoplayfornonVolume"=dword:00000001
+
+; Clear recently opened document history upon exit
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"ClearRecentDocsOnExit"=dword:00000001
+
+; Remove "3D Objects" from dialog boxes
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag]
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag]
+"ThisPCPolicy"="Hide"
+
+; Remove "Movies" from dialog boxes
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag]
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag]
+"ThisPCPolicy"="Hide"
+
+; Remove "Music" from dialog boxes
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag]
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag]
+"ThisPCPolicy"="Hide"
+
+; Disable lock screen app notifications
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableLockScreenAppNotifications"=dword:00000001
+
+; Disable Live Tiles push notifications
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoTileApplicationNotification"=dword:00000001
+
+; Disable the "Look For An App In The Store" option
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=dword:00000001
+
+; Disable the display of recently used files in Quick Access
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3134ef9c-6b18-4996-ad04-ed5912e00eb5}]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3134ef9c-6b18-4996-ad04-ed5912e00eb5}]
+
+; Add registry value to disable Start pins.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\PolicyManager\current\device\Start]
+"ConfigureStartPins"="{\"pinnedList\": [{}]}"
+
+; Disable Chat icon
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Chat]
+"ChatIcon"=dword:00000003
+
+; Disable CompatTelRunner.exe
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CompatTelRunner.exe]
+"Debugger"="C:\Windows\System32\taskkill.exe"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun]
+"1"="CompatTelRunner.exe"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"DisallowRun"=dword:00000001
+
+; Disable DeviceCensus.exe
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\DeviceCensus.exe]
+"Debugger"="C:\Windows\System32\taskkill.exe"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun]
+"2"="DeviceCensus.exe"
+
+; Disable app access to paired Bluetooth devices
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetooth]
+"Value"="Deny"
+
+; Disable app access to unpaired Bluetooth devices
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
+"Value"="Deny"
+
+; Disable app access to 'Documents' folder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+; Disable app access to 'Pictures' folder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+; Disable app access to 'Videos' folder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
+; Disable app access to 'Music' folder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\musicLibrary]
+"Value"="Deny"
+
+; Disable app access to input devices
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\musicLibrary]
+"Value"="Deny"
+
+; Disable app access to personal files
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\humanInterfaceDevice]
+"Value"="Deny"
+
+; Disable app access to voice activation
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsActivateWithVoice"=dword:00000002
+"LetAppsActivateWithVoice_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsActivateWithVoice_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsActivateWithVoice_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps]
+"AgentActivationEnabled"=dword:00000000
+
+; Disable app access to voice activation on locked system
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsActivateWithVoiceAboveLock"=dword:00000002
+"LetAppsActivateWithVoiceAboveLock_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsActivateWithVoiceAboveLock_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsActivateWithVoiceAboveLock_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps]
+"AgentActivationOnLockScreenEnabled"=dword:00000000
+
+; Disable app access to call history
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{8BC668CF-7728-45BD-93F8-CF2B3B41D7AB}]
+"Value"="Deny"
+
+; Disable app access to phone calls
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsAccessPhone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
+"Value"="Deny"
+
+; Disable app access to messaging (SMS / MMS)
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessMessaging_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{992AFA70-6F47-4148-B3E9-3003349C1548}]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{21157C1F-2651-4CC1-90CA-1F28B02263F6}]
+"Value"="Deny"
+
+; Disable app access to location
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessLocation"=dword:00000002
+"LetAppsAccessLocation_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\lfsvc\Service\Configuration]
+"Status"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{E6AD100E-5F4E-44CD-BE0F-2265D88D14F5}]
+"Value"="Deny"
+
+; Disable app access to account information, name, and picture
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{C1D23ACC-752B-43E5-8448-8D0E519CD6D6}]
+"Value"="Deny"
+
+; Disable app access to motion activity
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMotion"=dword:00000002
+"LetAppsAccessMotion_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\activity]
+"Value"="Deny"
+
+; Disable app access to trusted devices
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessTrustedDevices"=dword:00000002
+"LetAppsAccessTrustedDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceDenyTheseApps"=hex(7):00,00
+
+; Disable app access to unpaired wireless devices
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsSyncWithDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\LooselyCoupled]
+"Value"="Deny"
+
+; Disable app access to camera
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessCamera"=dword:00000002
+"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{E5323777-F976-4f5b-9B55-B94699C46E44}]
+"Value"="Deny"
+
+; Disable app access to microphone
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMicrophone"=dword:00000002
+"LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{2EEF81BE-33FA-4800-9670-1CD474972C3F}]
+"Value"="Deny"
+
+; Disable app access to information about other apps
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsGetDiagnosticInfo"=dword:00000002
+"LetAppsGetDiagnosticInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{2297E4E2-5DBE-466D-A12B-0F8286F0D9CA}]
+"Value"="Deny"
+
+; Disable app access to your contacts
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{7D7E8402-7C54-4821-A34E-AEEFD62DED93}]
+"Value"="Deny"
+
+; Disable app access to notifications
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessNotifications"=dword:00000002
+"LetAppsAccessNotifications_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{52079E78-A92B-413F-B213-E8FE35712E72}]
+"Value"="Deny"
+
+; Disable app access to calendar
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{D89823BA-7180-4B81-B50C-7E471E6121A3}]
+"Value"="Deny"
+
+; Disable app access to tasks
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessTasks"=dword:00000002
+"LetAppsAccessTasks_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{E390DF20-07DF-446D-B962-F5C953062741}]
+"Value"="Deny"
+
+; Disable app access to email
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessEmail_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{9231CB4C-BF57-4AF3-8C55-FDA7BFCC04C5}]
+"Value"="Deny"
+
+; Disable app access to radios
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsAccessRadios_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{A8804298-2D5F-42E3-9531-9C8C39EB29CE}]
+"Value"="Deny"
+
+; Disable app access to physical movement
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessBackgroundSpatialPerception"=dword:00000002
+"LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\spatialPerception]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\backgroundSpatialPerception]
+"Value"="Deny"
+
+; Disable app access to human presence
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessHumanPresence"=dword:00000002
+"LetAppsAccessHumanPresence_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessHumanPresence_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessHumanPresence_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\humanPresence]
+"Value"="Deny"
+
+; Disable app access to eye tracking
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessGazeInput"=dword:00000002
+"LetAppsAccessGazeInput_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\gazeInput]
+"Value"="Deny"
+
+; Disable app access to screen capture
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessGraphicsCaptureProgrammatic"=dword:00000002
+"LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureWithoutBorder"=dword:00000002
+"LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureProgrammatic]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\graphicsCaptureWithoutBorder]
+"Value"="Deny"
+
+; Disable app access to background activity
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsRunInBackground"=dword:00000002
+"LetAppsRunInBackground_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUserDisabled"=dword:00000001
+
+; Disable Application Impact Telemetry (AIT)
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"AITEnable"=dword:00000000
+
+; Disable Application Compatibility Engine
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableEngine"=dword:00000001
+
+; Remove 'Program Compatibility' tab from file properties
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisablePropPage"=dword:00000001
+
+; Disable Steps Recorder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001
+
+; Disable 'Inventory Collector' task
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableInventory"=dword:00000001
+
+; Disable Application Compatibility Engine
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableEngine"=dword:00000001
+
+; Remove 'Program Compatibility' tab from file properties
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisablePropPage"=dword:00000001
+
+; Disable Steps Recorder
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001
+
+; Disable 'Inventory Collector' task
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableInventory"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+; Disable Cloud Content features
+"DisableConsumerAccountStateContent"=dword:00000001
+"DisableCloudOptimizedContent"=dword:00000001
+; Disable Windows Tips
+"DisableSoftLanding"=dword:00000001
+; Disable Windows Spotlight
+"DisableWindowsSpotlightFeatures"=dword:00000001
+; Disable Microsoft Consumer Experiences
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+; Disable suggested content in Settings app
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-353694Enabled"=dword:00000000
+"SubscribedContent-353696Enabled"=dword:00000000
+"SubscribedContent-310093Enabled"=dword:00000000
+"SubscribedContent-338388Enabled"=dword:00000000
+"SubscribedContent-338389Enabled"=dword:00000000
+
+; Disable Content Delivery Manager features
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"OemPreInstalledAppsEnabled"=dword:00000000
+"PreInstalledAppsEnabled"=dword:00000000
+"SilentInstalledAppsEnabled"=dword:00000000
+"ContentDeliveryAllowed"=dword:00000000
+"FeatureManagementEnabled"=dword:00000000
+"PreInstalledAppsEverEnabled"=dword:00000000
+"SoftLandingEnabled"=dword:00000000
+"SubscribedContentEnabled"=dword:00000000
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+; Clear Content Delivery Manager suggested apps
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\Subscriptions]
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SuggestedApps]
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+; ; Disable processing of Desktop Analytics
+"AllowDesktopAnalyticsProcessing"=dword:00000000
+; Disable sending device name in Windows diagnostic data
+"AllowDeviceNameInTelemetry"=dword:00000000
+; Disable collection of Edge browsing data for Desktop Analytics
+"MicrosoftEdgeDataOptIn"=dword:00000000
+; Disable diagnostics data processing for Business cloud
+"AllowWUfBCloudProcessing"=dword:00000000
+; Disable Update Compliance processing of diagnostics data
+"AllowUpdateComplianceProcessing"=dword:00000000
+; Disable commercial usage of collected data
+"AllowCommercialDataPipeline"=dword:00000000
+; Disable diagnostic and usage telemetry
+"AllowTelemetry"=dword:00000000
+; Disable automatic cloud configuration downloads
+"DisableOneSettingsDownloads"=dword:00000001
+; Disable Windows feedback collection
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+; Disable diagnostic and usage telemetry
+"AllowTelemetry"=dword:00000000
+; Disable Windows feedback collection
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+; Disable Customer Experience Improvement Program (CEIP)
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Siuf\Rules]
+; Disable Windows feedback collection
+"NumberOfSIUFInPeriod"=dword:00000000
+
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Siuf\Rules\PeriodInNanoSeconds]
+
+; Disable text and handwriting data collection
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+"AllowInputPersonalization"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
+"PreventHandwritingErrorReports"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\TabletPC]
+"PreventHandwritingDataSharing"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+; Disable background clipboard data collection ('cbdhsvc') (breaks clipboard history and sync)
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\cbdhsvc]
+"Start"=dword:00000004
+
+; Disable participation in Cortana data collection
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Search]
+"CortanaConsent"=dword:00000000
+
+; Disable license telemetry
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform]
+"NoGenTicket"=dword:00000001
+
+; Disable error reporting
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\wersvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\wercplsupport]
+"Start"=dword:00000004
+
+; Disable WER consent
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\Windows Error Reporting\Consent]
+"DefaultConsent"=dword:00000001
+"DefaultOverrideBehavior"=dword:00000001
+
+; Disable WER sending second-level data
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"DontSendAdditionalData"=dword:00000001
+; Disable WER logging
+"LoggingDisabled"=dword:00000001
+
+; Disable remote access to search index
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventRemoteQueries"=dword:00000001
+
+; Disable search's access to location
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowSearchToUseLocation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"AllowSearchToUseLocation"=dword:00000000
+
+; Disable local search history
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchHistory"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+
+; Disable sharing personal search data with Microsoft
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchPrivacy"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+; Disable all settings synchronization
+"DisableSettingSync"=dword:00000002
+"DisableSettingSyncUserOverride"=dword:00000001
+"SyncPolicy"=dword:00000005
+; Disable Application setting synchronization
+"DisableApplicationSettingSync"=dword:00000002
+"DisableApplicationSettingSyncUserOverride"=dword:00000001
+; Disable App Sync setting synchronization
+"DisableAppSyncSettingSync"=dword:00000002
+"DisableAppSyncSettingSyncUserOverride"=dword:00000001
+; Disable Desktop Theme setting synchronization
+"DisableDesktopThemeSettingSync"=dword:00000002
+"DisableDesktopThemeSettingSyncUserOverride"=dword:00000001
+; Disable Personalization setting synchronization
+"DisablePersonalizationSettingSync"=dword:00000002
+"DisablePersonalizationSettingSyncUserOverride"=dword:00000001
+; Disable Start Layout setting synchronization
+"DisableStartLayoutSettingSync"=dword:00000002
+"DisableStartLayoutSettingSyncUserOverride"=dword:00000001
+; Disable Web Browser setting synchronization
+"DisableWebBrowserSettingSync"=dword:00000002
+"DisableWebBrowserSettingSyncUserOverride"=dword:00000001
+; Disable Windows setting synchronization
+"DisableWindowsSettingSync"=dword:00000002
+"DisableWindowsSettingSyncUserOverride"=dword:00000001
+; Disable Credentials setting synchronization
+"DisableCredentialsSettingSync"=dword:00000002
+"DisableCredentialsSettingSyncUserOverride"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Policies\Microsoft\Windows\EdgeUI]
+; Disable app usage tracking
+"DisableMFUTracking"=dword:00000001
+; Disable recent apps
+"DisableRecentApps"=dword:00000001
+; Disable backtracking
+"TurnOffBackstack"=dword:00000001
+
+; Disable device sensors
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableSensors"=dword:00000001
+
+; Disable Wi-Fi Sense
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
+"value"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots]
+"value"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config]
+"AutoConnectAllowedOEM"=dword:00000000
+
+; Disable app launch tracking
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+; Disable Website Access of Language List
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+; Disable game screen recording
+[HKEY_LOCAL_MACHINE\P11_NTUSER\System\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
+
+; Disable internet access for Windows DRM
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
+; Disable typing feedback
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+; Disable Activity Feed feature
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000
+
+; Disable active probing to Microsoft NCSI server
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
+
+; Disable Push To Install feature
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\PushToInstall]
+"DisablePushToInstall"=dword:00000001
+
+; Add registry values to disable MRT feature.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+; Disable Cloud Clipboard (breaks clipboard sync)
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowCrossDeviceClipboard"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Clipboard]
+"CloudClipboardAutomaticUpload"=dword:00000000
+
+; Disable clipboard history
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowClipboardHistory"=dword:00000000
+
+; Enable Local Accounts on OOBE.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"BypassNRO"=dword:00000001
+
+; Disable Choose Privacy Settings Experience on OOBE
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\OOBE]
+"DisablePrivacyExperience"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Policies\Microsoft\Windows\OOBE]
+"DisablePrivacyExperience"=dword:00000001
+
+; Disable Telemetry.
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\dmwappushservice]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\DiagTrack]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\diagsvc]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\diagnosticshub.standardcollector.service]
+"Start"=dword:00000004
+
+; Disable reserved storage for updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager]
+"ShippedWithReserves"=dword:00000000
+"PassedPolicy"=dword:00000000
+"MiscPolicyInfo"=dword:00000002

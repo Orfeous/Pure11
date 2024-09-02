@@ -1,0 +1,24 @@
+Program Files (x86)\Microsoft\Edge
+Program Files (x86)\Microsoft\EdgeCore
+Program Files (x86)\Microsoft\EdgeUpdate
+Program Files (x86)\Microsoft\EdgeWebView
+Program Files (x86)\Windows Mail
+Program Files (x86)\Windows Media Player
+Program Files (x86)\Windows Sidebar
+Program Files\Windows Mail
+Program Files\Windows Media Player
+Program Files\Windows Sidebar
+ProgramData\Microsoft OneDrive
+ProgramData\Microsoft\OneDrive
+Windows\System32\CompatTelRunner.exe
+Windows\System32\DeviceCensus.exe
+Windows\System32\Microsoft-Edge-Webview
+Windows\System32\OneDrive.ico
+Windows\System32\OneDrive.ico
+Windows\System32\OneDriveSetup.exe
+Windows\System32\OneDriveSetup.ico
+Windows\SystemApps\*OneDrive*
+Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+Windows\SysWOW64\OneDriveSetup.exe
+Windows\WinSxS\*microsoft-edge*
+Windows\WinSxS\*OneDrive*

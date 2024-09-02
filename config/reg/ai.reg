@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+; Disable Copilot feature.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+; Disable Copilot access.
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\Shell\Copilot\BingChat]
+"IsUserEligible"=dword:00000000
+
+; Disable Copilot auto-launch on start.
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"AutoOpenCopilotLargeScreens"=dword:00000000
+
+; Turn Off Apps Access to Generative AI
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\generativeAI]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\generativeAI]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessGenerativeAI"=dword:00000002
+"LetAppsAccessGenerativeAI_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGenerativeAI_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGenerativeAI_ForceDenyTheseApps"=hex(7):00,00

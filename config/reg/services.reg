@@ -1,0 +1,41 @@
+Windows Registry Editor Version 5.00
+
+; Disable User Data Storage
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\UnistoreSvc]
+"Start"=dword:00000004
+
+; Disable Sync Host
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\OneSyncSvc]
+"Start"=dword:00000004
+
+; Disable Xbox Live Auth Manager
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\XblAuthManager]
+"Start"=dword:00000004
+
+; Disable Xbox Live Game Save
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\XblGameSave]
+"Start"=dword:00000004
+
+; Disable Xbox Live Networking
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\XboxNetApiSvc]
+"Start"=dword:00000004
+
+; Disable Microsoft Account Sign-in Assistant (breaks Microsoft Store and Microsoft Account sign-in, but that's alright)
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\wlidsvc]
+"Start"=dword:00000004
+
+; Disable Downloaded Maps Manager
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\MapsBroker]
+"Start"=dword:00000004
+
+; Disable Microsoft Retail Demo
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\RetailDemo]
+"Start"=dword:00000004
+
+; Disable User Data Access
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\UserDataSvc]
+"Start"=dword:00000004
+
+; Disable Messaging Service
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\MessagingService]
+"Start"=dword:00000004

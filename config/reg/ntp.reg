@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+
+; Configure NTP service
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\W32Time\Parameters]
+"NtpServer"="0.pool.ntp.org, 1.pool.ntp.org, 2.pool.ntp.org, 3.pool.ntp.org"
+"Type"="NTP"
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\W32Time\Config]
+"MaxPosPhaseCorrection"=dword:00000e10 ; (3600)
+"MaxNegPhaseCorrection"=dword:00000e10 ; (3600)
+
+[HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\W32Time\TimeProviders\NtpClient]
+"SpecialPollInterval"=dword:00000e10 ; (3600)
+"Enabled"=dword:00000001

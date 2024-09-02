@@ -1,0 +1,223 @@
+Windows Registry Editor Version 5.00
+
+; Mark 'Microsoft.Print3D' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Print3D_8wekyb3d8bbwe]
+
+; Mark 'Windows.Print3D' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Windows.Print3D_cw5n1h2txyewy]
+
+; Mark 'Microsoft.3DBuilder' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.3DBuilder_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Microsoft3DViewer' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.BingWeather' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingWeather_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.BingSports' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingSports_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.BingNews' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingNews_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.BingFinance' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.BingFinance_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MicrosoftOfficeHub' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Office.OneNote' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Office.OneNote_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Office.Sway' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Office.Sway_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.WindowsStore' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsStore_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.StorePurchaseApp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.StorePurchaseApp_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.XboxApp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxApp_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Xbox.TCUI' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Xbox.TCUI_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.XboxGamingOverlay' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.XboxGameOverlay' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxGameOverlay_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.XboxIdentityProvider' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxIdentityProvider_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.XboxSpeechToTextOverlay' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.WindowsPhone' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsPhone_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.CommsPhone' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.CommsPhone_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.YourPhone' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.YourPhone_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Windows.CallingShellApp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.CallingShellApp_cw5n1h2txyewy]
+
+; Mark 'king.com.CandyCrushSaga' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\king.com.CandyCrushSaga_kgqvnymyfvs32]
+
+; Mark 'king.com.CandyCrushSodaSaga' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\king.com.CandyCrushSodaSaga_kgqvnymyfvs32]
+
+; Mark 'ShazamEntertainmentLtd.Shazam' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\ShazamEntertainmentLtd.Shazam_pqbynwjfrbcg4]
+
+; Mark 'Flipboard.Flipboard' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Flipboard.Flipboard_3f5azkryzdbc4]
+
+; Mark '9E2F88E3.Twitter' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\9E2F88E3.Twitter_wgeqdkkx372wm]
+
+; Mark 'ClearChannelRadioDigital.iHeartRadio' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\ClearChannelRadioDigital.iHeartRadio_a76a11dkgb644]
+
+; Mark 'D5EA27B7.Duolingo-LearnLanguagesforFree' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\D5EA27B7.Duolingo-LearnLanguagesforFree_yx6k7tf7xvsea]
+
+; Mark 'AdobeSystemsIncorporated.AdobePhotoshopExpress' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\AdobeSystemsIncorporated.AdobePhotoshopExpress_ynb6jyjzte8ga]
+
+; Mark 'PandoraMediaInc.29680B314EFC2' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\PandoraMediaInc.29680B314EFC2_n619g4d5j0fnw]
+
+; Mark '46928bounde.EclipseManager' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\46928bounde.EclipseManager_a5h4egax66k6y]
+
+; Mark 'ActiproSoftwareLLC.562882FEEB491' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\ActiproSoftwareLLC.562882FEEB491_24pqs290vpjk0]
+
+; Mark 'SpotifyAB.SpotifyMusic' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\SpotifyAB.SpotifyMusic_zpdnekdrzrea0]
+
+; Mark 'Microsoft.Windows.OOBENetworkCaptivePortal' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy]
+
+; Mark 'Microsoft.Windows.OOBENetworkConnectionFlow' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy]
+
+; Mark 'Microsoft.MicrosoftEdge' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftEdge_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MicrosoftEdgeDevToolsClient' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.AccountsControl' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.AccountsControl_cw5n1h2txyewy]
+
+; Mark 'Microsoft.AsyncTextService' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.AsyncTextService_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Windows.Apprep.ChxApp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy]
+
+; Mark 'Microsoft.Windows.Holographic.FirstRun' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.Holographic.FirstRun_cw5n1h2txyewy]
+
+; Mark 'Microsoft.Windows.PeopleExperienceHost' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy]
+
+; Mark 'Microsoft.WindowsFeedback' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsFeedback_cw5n1h2txyewy]
+
+; Mark 'Microsoft.XboxGameCallableUI' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.XboxGameCallableUI_cw5n1h2txyewy]
+
+; Mark 'Windows.ContactSupport' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Windows.ContactSupport_cw5n1h2txyewy]
+
+; Mark 'Microsoft.549981C3F5F10' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.549981C3F5F10_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.GetHelp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.GetHelp_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Getstarted' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Getstarted_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Messaging' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Messaging_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MixedReality.Portal' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MixedReality.Portal_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.WindowsFeedbackHub' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.WindowsCamera' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsCamera_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MSPaint' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MSPaint_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.WindowsMaps' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsMaps_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MinecraftUWP' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MinecraftUWP_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.People' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.People_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Wallet' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Wallet_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.OneConnect' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.OneConnect_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.MicrosoftSolitaireCollection' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe]
+
+; Mark 'microsoft.windowscommunicationsapps' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\microsoft.windowscommunicationsapps_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.ZuneMusic' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneMusic_8wekyb3d8bbwe]
+
+; # Mark 'MicrosoftWindows.Client.WebExperience' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy]
+
+; # Mark 'Microsoft.ScreenSketch' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ScreenSketch_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.ZuneVideo' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Windows.Photos' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.Photos_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.SkypeApp' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.SkypeApp_kzf8qxf38zg5c]
+
+; Mark 'Microsoft.GroupMe10' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.GroupMe10_kzf8qxf38zg5c]
+
+; Mark 'Microsoft.WindowsSoundRecorder' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.NetworkSpeedTest' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.NetworkSpeedTest_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Todos' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Todos_8wekyb3d8bbwe]
+
+; Mark 'Microsoft.Windows.DevHome' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Windows.DevHome_8wekyb3d8bbwe]
+
+; Mark 'MicrosoftWindows.CrossDevice' as deprovisioned to block reinstall during Windows updates.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\MicrosoftWindows.CrossDevice_cw5n1h2txyewy]

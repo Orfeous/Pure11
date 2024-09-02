@@ -1,0 +1,50 @@
+Windows Registry Editor Version 5.00
+
+; Disable cloud-based speech recognition
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000000
+
+; Disable automatic map downloads
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Maps]
+"AllowUntriggeredNetworkTrafficOnSettingsPage"=dword:00000000
+"AutoDownloadAndUpdateMapData"=dword:00000000
+
+; Disable online tips
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowOnlineTips"=dword:00000000
+
+; Remove OneDrive from startup
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Run\OneDrive]
+
+; Disable automatic OneDrive installation
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Run\OneDriveSetup]
+
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
+"OneDrive"=hex:03,00,00,00,00,00,00,00,00,00,00,00
+
+; Clear OneDrive environment variable
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\Environment\OneDrive]
+
+; Disable OneDrive usage.
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+"DisableFileSync"=dword:00000001
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+; Remove OneDrive folder from File Explorer
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Classes\Wow6432Node\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; Remove Edge
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\EdgeUpdateDev]
+"AllowUninstall"=dword:00000001
+
+; Remove Edge file and URL associations.
+[-HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts]
+
+; Remove Edge related registries.
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft EdgeWebView]

@@ -1,0 +1,167 @@
+Windows Registry Editor Version 5.00
+
+; ; ; TODO: sort these out properly into individual files for better manageability.
+
+; Disable Windows Location Provider
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableWindowsLocationProvider"=dword:00000001
+
+; Disable location scripting
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocationScripting"=dword:00000001
+
+; Disable location
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"Value"="Deny"
+"SensorPermissionState"=dword:00000000
+
+; Disable Cortana's history display
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"HistoryViewEnabled"=dword:00000000
+
+; Disable Cortana's device history usage
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"DeviceHistoryEnabled"=dword:00000000
+
+; Disable 'Hey Cortana' voice activation
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationOn"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationDefaultOn"=dword:00000000
+
+; Disable Cortana keyboard shortcut
+[HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"VoiceShortcut"=dword:00000000
+
+; Disable Cortana on locked device
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationEnableAboveLockscreen"=dword:00000000
+
+; Disable automatic update of speech data
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
+
+; Disable Cortana voice support during Windows setup
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"DisableVoice"=dword:00000001
+
+; Disable Cortana during search
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Disable Cortana experience
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\PolicyManager\default\Experience]
+"AllowCortana"=dword:00000000
+
+; Disable Cortana's access to cloud services
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+; Disable Cortana speech interaction while the system is locked
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaAboveLock"=dword:00000000
+
+; Disable enabling of Cortana
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Search]
+"CanCortanaBeEnabled"=dword:00000000
+
+; Disable basic authentication in WinRM
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WinRM\Client]
+"AllowBasic"=dword:00000000
+
+; Disable Windows Remote Assistance feature (alternative method)
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"AllowBasic"=dword:00000000
+
+; Enable secure connections for legacy .NET apps
+; Disable insecure connections from .NET apps
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+"SystemDefaultTlsVersions"=dword:00000001
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727]
+"SystemDefaultTlsVersions"=dword:00000001
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+"SystemDefaultTlsVersions"=dword:00000001
+"SchUseStrongCrypto"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
+"SystemDefaultTlsVersions"=dword:00000001
+"SchUseStrongCrypto"=dword:00000001
+
+; Enable Data Execution Prevention (DEP)
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoDataExecutionPrevention"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableHHDEP"=dword:00000000
+
+; Disable 'Always install with elevated privileges' in Windows Installer
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\Installer]
+"AlwaysInstallElevated"=dword:00000000
+
+; Disable 'Windows Connect Now' wizard
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WCN\UI]
+"DisableWcnUi"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\WCN\Registrars]
+"DisableFlashConfigRegistrar"=dword:00000000
+"DisableInBand802DOT11Registrar"=dword:00000000
+"DisableUPnPRegistrar"=dword:00000000
+"DisableWPDRegistrar"=dword:00000000
+"EnableRegistrars"=dword:00000000
+
+; Disable Snipping Tool keyboard shortcut
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisabledHotkeys"="S"
+
+; Hide the Task View Button From Taskbar
+[HKEY_LOCAL_MACHINE\P11_NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowTaskViewButton"=dword:00000000
+
+; Delete Application Compatibility Appraiser
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{0600DD45-FAF2-4131-A006-0B17509B9F78}]
+
+; Delete Customer Experience Improvement Program
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{4738DE7A-BCC1-4E2D-B1B0-CADB044BFA81}]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{6FAC31FA-4A85-4E64-BFD5-2154FF4594B3}]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{FC931F16-B50A-472E-B061-B6F79A71EF59}]
+
+; Delete Program Data Updater
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{0671EB05-7D95-4153-A32B-1426B9FE61DB}]
+
+; Delete autochk proxy
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{87BF85F4-2CE1-4160-96EA-52F554AA28A2}]
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{8A9C643C-3D74-4099-B6BD-9C6D170898B1}]
+
+; Delete QueueReporting
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{E3176A65-4E44-4ED3-AA73-3283660ACB9C}]
+
+; Disable application usage tracking ('AitAgent')
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{71279CC0-9429-4FD2-BF12-72838E105995}]
+
+
+; Disable startup application data tracking ('StartupAppTask')
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{645AE3F4-2ABB-4B23-BBCC-8501D777B798}]
+
+; Disable software compatibility updates ('PcaPatchDbTask')
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{CC3F381B-020E-499E-A8BB-AAC3ADA756F0}]
+
+; Disable compatibility adjustment data sharing ('SdbinstMergeDbTask')
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{F87BAE91-2470-40AB-9F94-A437578A5E4D}]
+
+; Disable application backup data gathering ('MareBackup')
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{C9D4B50C-097D-4C67-8491-9FA266465746}]
+
+; Disable 'Device' task
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{A6A52288-35BE-4837-BE85-B761556430D7}]
+
+; Disable 'Device User' task
+[-HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{EE2A7214-396B-4365-9626-042EC2D5A211}]
+ 
