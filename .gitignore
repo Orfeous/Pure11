@@ -1,0 +1,11 @@
+/iso/*
+/logs/*
+/work/*.exe
+/work/drivers/*
+/work/iso-source/*
+/work/mount/*
+/work/scratch/*
+/work/updates/*
+
+!/work/drivers/.gitkeep
+!/work/updates/.gitkeep

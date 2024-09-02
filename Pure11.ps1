@@ -176,6 +176,7 @@ function New-P11Directories {
     New-Item -Path "$($P11Paths.IsoSourceDirectory)" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null;
     New-Item -Path "$($P11Paths.MountDirectory)" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null;
     New-Item -Path "$($P11Paths.ScratchDirectory)" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null;
+    New-Item -Path "$($P11Paths.UpdatesDirectory)" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null;
     New-Item -Path "$($P11Paths.DriversDirectory)" -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null;
     Write-Log -Message "Pure11 directory structure created." -Severity Info;
 };

@@ -259,14 +259,14 @@ Pure11 is for those who prefer an OS that works for them, not the other way arou
 
 <details>
 
-The script can be configured using the various files in the `./config` folder.
+The script can be configured using the various files in the `./config` folder (and in the `./work` folder, see below).
 
-- 📄 **appx.conf**
+- 📄 **config/appx.conf**
 
         List of AppX packages to be removed.
         Lines starting with '#' character interpreted as comments and will be ignored.
 
-- 📄 **autounattend.xml**
+- 📄 **config/autounattend.xml**
 
     Allows customization of the Setup process (among other things)
 
@@ -291,30 +291,30 @@ The script can be configured using the various files in the `./config` folder.
 
 
 
-- 📄 **capabilities.conf**
+- 📄 **config/capabilities.conf**
 
         List of Windows Capabilities to be removed.
         Lines starting with '#' character interpreted as comments and will be ignored.
 
-- 📄 **features.conf**
+- 📄 **config/features.conf**
 
         List of Windows Optional Features to be disabled.
         Lines starting with '#' character interpreted as comments and will be ignored.
 
-- 📄 **files.txt**
+- 📄 **config/files.txt**
 
         List of file paths to be deleted.
         They are relative to the mount folder.
         Lines starting with '#' character interpreted as comments and will be ignored.
 
-- 📄 **hosts.conf**
+- 📄 **config/hosts.conf**
     
     [DNS sinkhole Wikipedia](https://en.wikipedia.org/wiki/DNS_sinkhole)
 
         List of DNS entries to be sinkholed using the hosts file.
         Lines starting with '#' character interpreted as comments and will be ignored.
 
-- 📂 **post-install**
+- 📂 **config/post-install**
 
     Scripts in this directory will be added to be executed when a user logs in for the first time.
 
@@ -322,7 +322,7 @@ The script can be configured using the various files in the `./config` folder.
 
     Note: Todo to investigate why they only executed *'partially'*.
 
-- 📂 **reg**
+- 📂 **config/reg**
 
     *.reg files to implement registry changes. File whose name is starting with `-` will be ignored.
 
@@ -337,6 +337,18 @@ The script can be configured using the various files in the `./config` folder.
     | HKLM\P11_SOFTWARE    | HKEY_LOCAL_MACHINE\Software | Settings for installed software and Windows System itself |
     | HKLM\P11_SYSTEM    | HKEY_LOCAL_MACHINE\SYSTEM | Settings and configuration data for the operating system |
     | HKLM\P11_NTUSER    | HKEY_CURRENT_USER | User-specific registry data, will be applied to new users |
+
+
+- 📂 **work/updates**
+
+    Place windows update `*.cab` and `*.msu` files in this directory and they will be added to the image.
+    Recursive, subfolders allowed.
+
+- 📂 **work/drivers**
+
+    Place device drivers in this directory and they will be added to the image. Recursive, subfolders allowed.
+    
+
 
 </details>
 
