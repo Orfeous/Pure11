@@ -1,0 +1,197 @@
+Windows Registry Editor Version 5.00
+
+; Entries in this file should be all commented out, 
+; they only present to keep a ledger of stuff which was tested and didn't worked or had unwanted side-effects.
+
+
+
+; ; Disable 'Delivery Optimization' service (breaks Microsoft Store downloads)
+; It also breaks windows update! :-/
+; ; [HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\DoSvc]
+; ; "Start"=dword:00000004
+
+; ; Disable insecure 'SMBv1' protocol
+; Causes BSOD post install, also this is disabled by default so it may not be needed at all
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\ControlSet001\Services\mrxsmb10]
+; "Start"=dword:00000004
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+; "SMBv1"=dword:00000000
+
+; ; Disable insecure 'RC2' ciphers
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "RC4" ciphers
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "DES" cipher
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "Triple DES" cipher
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168]
+; "Enabled"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168/168]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "NULL" cipher
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\NULL]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "MD5" hash
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "SHA-1" hash
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA]
+; "Enabled"=dword:00000000
+
+; ; Disable insecure "SSL 2.0" protocol
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; ; Disable insecure "SSL 3.0" protocol
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; ; Disable insecure "TLS 1.0" protocol
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; ; Disable insecure "TLS 1.1" protocol
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; ; Disable insecure "DTLS 1.0" protocol
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Server]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.0\Client]
+; "Enabled"=dword:00000000
+; "DisabledByDefault"=dword:00000001
+
+; ; Enable secure "DTLS 1.2" protocol.
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Server]
+; "Enabled"=dword:00000001
+; "DisabledByDefault"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\DTLS 1.2\Client]
+; "Enabled"=dword:00000001
+; "DisabledByDefault"=dword:00000000
+
+; ; Enable secure 'TLS 1.3' protocol.
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server]
+; "Enabled"=dword:00000001
+; "DisabledByDefault"=dword:00000000
+
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client]
+; "Enabled"=dword:00000001
+; "DisabledByDefault"=dword:00000000
+
+; ; Enable strong Diffie-Hellman key requirement
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman]
+; "ServerMinKeyBitLength"=dword:00000800 ;(2048)
+; "ClientMinKeyBitLength"=dword:00000800 ;(2048)
+
+; ; Disable insecure renegotiation
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL]
+; "AllowInsecureRenegoClients"=dword:00000000
+; "AllowInsecureRenegoServers"=dword:00000000
+; "DisableRenegoOnServer"=dword:00000001
+; "DisableRenegoOnClient"=dword:00000001
+; "UseScsvForTls"=dword:00000001
+
+; ; Disable unauthorized user account discovery
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\Lsa]
+; "RestrictAnonymousSAM"=dword:00000001
+
+; ; Disable anonymous access to named pipes and shares
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Services\LanManServer\Parameters]
+; "RestrictNullSessAccess"=dword:00000001
+
+; ; Disable hidden remote file access via administrative shares
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+; "AutoShareWks"=dword:00000000
+
+; ; Disable anonymous enumeration of shares
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\LSA]
+; "RestrictAnonymous"=dword:00000001
+
+; ; Disable Windows Remote Assistance feature
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\Remote Assistance]
+; "fAllowToGetHelp"=dword:00000000
+; "fAllowFullControl"=dword:00000000
+
+; ; Disable insecure 'LM & NTLM' protocols
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\Lsa]
+; "LmCompatibilityLevel"=dword:00000005
+
+; ; Disable storage of the LAN Manager password hashes
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\Lsa]
+; "NoLMHash"=dword:00000001
+
+; ; Enable Structured Exception Handling Overwrite Protection (SEHOP)
+; Causes BSOD post install
+; [HKEY_LOCAL_MACHINE\P11_SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+; "DisableExceptionChainValidation"=dword:00000000
