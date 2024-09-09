@@ -316,12 +316,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{E5323777-F976-4f5b-9B55-B94699C46E44}]
 "Value"="Deny"
 
-; Disable app access to microphone
-[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
-"LetAppsAccessMicrophone"=dword:00000002
-"LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+; ; Disable app access to microphone
+; Having this in renders the microphone completely unusable in all apps.
+; [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+; "LetAppsAccessMicrophone"=dword:00000002
+; "LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
+; "LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
+; "LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
 
 [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
 "Value"="Deny"
