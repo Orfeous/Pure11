@@ -303,12 +303,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\P11_NTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\LooselyCoupled]
 "Value"="Deny"
 
-; Disable app access to camera
-[HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
-"LetAppsAccessCamera"=dword:00000002
-"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
-"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
-"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+; ; Disable app access to camera
+; Having this in breaks the camera
+; [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+; "LetAppsAccessCamera"=dword:00000002
+; "LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+; "LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+; "LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
 
 [HKEY_LOCAL_MACHINE\P11_SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
 "Value"="Deny"
