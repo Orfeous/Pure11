@@ -1,7 +1,7 @@
 # Pure 11 🪟
 <a href="https://www.youtube.com/watch?v=aGSKrC7dGcY" target="_blank">![Pure11 meme](./.github/pure.png)</a>
 
-Windows 11 arrives loaded with more than just an operating system—there's also bloatware, relentless telemetry, and a host of so-called 'features' designed to serve everyone except the end user.
+Windows 11 arrives loaded with more than just an operating system. There's also bloatware, relentless telemetry, and a host of so-called 'features' designed to serve everyone except the end user.
 
 Pure11 cuts through the nonsense, providing a streamlined, privacy-focused, and highly efficient version of the operating system.
 
